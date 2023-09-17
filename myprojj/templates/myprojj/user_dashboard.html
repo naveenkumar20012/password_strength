@@ -1,0 +1,25 @@
+{% extends 'myprojj/base.html' %}
+
+{% block content %}
+<h2>User Dashboard</h2>
+<p>Welcome, {{ user.username }}!</p>
+<p>Here, you can check your password history:</p>
+
+{% if password_checks %}
+    <ul>
+        {% for password_check in password_checks %}
+        <li>
+            <strong>Password:</strong> {{ password_check.password }}
+            <strong>Strength Score:</strong> {{ password_check.strength_score }}
+            <strong>Checked At:</strong> {{ password_check.created_at }}
+            <a href="{% url 'password_check_result' password_check.id %}">View Details</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No password checks have been performed yet.</p>
+{% endif %}
+
+<a href="{% url 'password_check' %}">Check a New Password</a>
+<a href="{% url 'logout' %}">Logout</a>
+{% endblock %}
