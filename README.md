@@ -11,12 +11,6 @@ The Password Strength Analyzer is a web-based application that allows users to a
 
 ---
 
-## Demo
-
-![Screenshot from 2023-09-17 07-46-27](https://github.com/naveenkumar20012/password_strength/assets/141645194/36753ec6-c58a-4fe4-84ee-9f5cb8b505ff)
-
----
-
 ## Features
 
 - **Password Strength Analysis**: Evaluate the strength of your passwords based on criteria such as length, complexity, and character variety.
@@ -28,6 +22,13 @@ The Password Strength Analyzer is a web-based application that allows users to a
 - **Open Source**: This project is open-source, allowing for community contributions and customization.
 
 ---
+
+## Demo
+
+![Screenshot from 2023-09-17 07-46-27](https://github.com/naveenkumar20012/password_strength/assets/141645194/36753ec6-c58a-4fe4-84ee-9f5cb8b505ff)
+
+---
+
 
 ## Usage
 
